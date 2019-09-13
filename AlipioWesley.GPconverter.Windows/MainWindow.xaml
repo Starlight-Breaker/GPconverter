@@ -1,0 +1,17 @@
+﻿<Window x:Class="AlipioWesley.GPconverter.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlipioWesley.GPconverter.Windows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="247" Width="541" >
+    <Grid>
+        <Label Content="Enter Grade Percentage Here:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="331" Height="48" FontSize="24"/>
+        <TextBox x:Name="txtBoxPercentage" HorizontalAlignment="Left" Height="48" Margin="346,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="24" LostFocus="LblPercentage_LostFocus"    />
+        <Button Content="Convert to GP" HorizontalAlignment="Left" Margin="129,72,0,0" VerticalAlignment="Top" Width="235" Height="48" FontSize="24" Click="Button_Click"/>
+        <Label x:Name="lblYourGP" Content="Your GP Is:" HorizontalAlignment="Left" Margin="212,125,-10,0" VerticalAlignment="Top" Width="331" Height="48" FontSize="24"/>
+        <Label x:Name="lblGP" Content="" HorizontalAlignment="Left" Margin="346,125,0,0" VerticalAlignment="Top" Height="48" Width="143" FontSize="24"/>
+
+    </Grid>
+</Window>
